@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content ="width=device-width, initial-scale=1.0"
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio</title>
     <style>
@@ -47,11 +48,15 @@ main {
     max-width: 900px;
     margin: 0 auto;
     padding: 30px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /* Estilos para las secciones */
 section {
     margin-bottom: 40px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 h2 {
@@ -113,6 +118,40 @@ button {
     border-radius: 4px;
     cursor: pointer;
 }
+
+  .box {
+      position: relative;
+      display: inline-block;
+      width: 150px; /* Ancho de las cajas */
+      height: 150px; /* Altura de las cajas para hacerlas cuadradas */
+      margin: 20px;
+      text-align: center;
+    }
+
+    .box img {
+      width: 100%; /* Ocupar todo el espacio disponible en la caja */
+      height: 100%; /* Ocupar todo el espacio disponible en la caja */
+      object-fit: cover;
+      border-radius: 100%;
+   
+    }
+    .box p {
+      position: absolute; /* Posición absoluta dentro de la caja */
+      top: 54px; /* Alinear el texto en la parte superior */
+      left: -13px; /* Alinear el texto a la izquierda */
+      width: 100%; /* Ancho igual al de la caja */
+      background-color: rgba(255, 255, 255, 0.5); /* Fondo semitransparente para el texto */
+      color: white; /* Color del texto */
+      font-weight: bold ;
+      padding: 10px; /* Espaciado interno para el texto */
+      margin: 0; /* Eliminar márgenes por defecto */
+    }
+
+  .social-icons {
+     padding: 30px;
+
+}
+
 </style>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -131,17 +170,23 @@ button {
     </header>
     <main>
         <section id="inicio">
-            <h2>Bienvenido a mi Portafolio</h2>
-            <p>¡Hola! Soy Natalia Benitez, una chica apasionada por los temas web y este es mi portafolio personal. Aquí encontrarás una muestra de mis proyectos y trabajos.</p>
+            <h2>¡Bienvenidos a mi blog!</h2>
+            <p>¡Hola! Soy Natalia Benitez, ¡Bienvenidos a mi rincón digital! Soy una apasionada web master y desarrolladora con un amor inquebrantable por el mundo del código y la creatividad en línea. Acompáñame en este blog mientras exploramos juntos el emocionante viaje de construir experiencias web cautivadoras, desde el primer boceto hasta el deslumbrante producto final. Descubre conmigo la magia de convertir líneas de código en sitios web funcionales y hermosos. ¡Prepárate para sumergirte en el fascinante universo de la creación web! </p>
+            <div class="box">
+                <img src="images/blue-art.jpg" alt="blue art" width: 100% ; height: 100% ; >
+                <p>Programar</p>
+              </div>
+              <div class="box">
+                <img src="images/pinky-art.jpg" alt="pinky art" width: 100% ; height: 100% ;>
+                <p>Inspirar</p>
+              </div>
+              <div class="box">
+                <img src="images/purple-art.jpg" alt="purple art" width: 100% ; height: 100% ; >
+                <p>Crear</p>
+              </div>
         </section>
         
-        <section id="acerca-de">
-            <h2>Acerca de mí</h2>
-            <img src="images/escritorio-mujer.jpg" alt="Foto de perfil" width="350" 150px; height="400 " border-radious="70%">
-            <p>Hola, soy Natalia Benitez, Desarrolladora web. Me apasiona crear webs y administrarlas. A lo largo de mi carrera, he trabajado en proeyctos destacados y reconocidos.</p>
-        </section>
-        
-        <section id="sobre-mi-trabajo">
+       <section id="sobre-mi-trabajo">
             <h2>Enfoque de mi trabajo</h2>
             <div class="proyecto">
                 <img src="images/trabajando-ando.jpg" alt="trabajando-ando" width="350" 150px; height="400 " border-radious="70%">
@@ -172,10 +217,13 @@ button {
         
         <section id="redes-sociales"> 
             <h2>Mis redes sociales</h2>
-            <ul>
-                <li><a href="#LinkedIn"> LinkedIn</a></li>
-                <li><a href="#Instagram"> Instagram </a></li>
-            </ul>
+            <div class="social-icons">
+                <a href="https://www.facebook.com"><img src="images/facebook-icon.png" alt="Facebook" target="_blank" > </a>
+                <a href="https://www.instagram.com"><img src="images/instagram-icon.png" alt="Instagram" target="_blank"></a>
+                <a href="https://www.youtube.com"><img src="images/youtube-icon.png" alt="Youtube" target="_blank" > </a>
+                <a href="https://www.linkedin.com"><img src="images/linked-in-icon.png" alt="Linked In "target="_blank"></a>
+                <a href="https://www.tiktok.com"><img src="images/tik-tok-icon.png" alt="Tik Tok" target="_blank"></a>
+</div>
 
      </section>
     </main>
