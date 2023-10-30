@@ -201,17 +201,46 @@ button {
                 <p>El servicio de administración de páginas web está diseñado para brindarte tranquilidad y eficiencia en el mantenimiento y actualización constante de tu sitio web. Nos encargamos de gestionar y optimizar todos los aspectos técnicos y visuales de tu página, asegurándonos de que siempre esté actualizada, segura y funcione de manera óptima.</p>
                 <a href="#">Ver más</a>
             </div>
-            <!-- Agregar más proyectos aquí -->
+            <!-- Sección CONTACTO -->
         </section>
         
         <section id="contacto">
             <h2>Contacto</h2>
-            <p>¡Gracias por visitar mi portafolio! Si deseas contactarme, por favor utiliza el siguiente formulario o envíame un correo electrónico a [tu correo].</p>
+            <p>¡Gracias por visitar mi portafolio! Si deseas contactarme, por favor utiliza el siguiente formulario o envíame un correo electrónico.</p>
             <form>
-                <input type="text" placeholder="Nombre" required>
-                <input type="email" placeholder="Correo electrónico" required>
-                <textarea placeholder="Mensaje" required></textarea>
-                <button type="submit">Enviar</button>
+             <label for="nombre completo">
+               <span>Nombre completo </span>
+               <input type="text" placeholder="Nombres y Apellidos" required id="nombre-completo">
+             </label>
+
+             <label for="email">
+                <span>Tu correo electrónico</span>
+                <input type="email" placeholder="Correo electrónico" required id="email">
+             </label>
+
+             <label for="fecha de nacimiento">
+                <span> Tu fecha de nacimiento</span>
+                <input type="date" id="fecha-nacimiento">
+             </label>
+            
+             <label for="Telefono">
+              <span> Tu número telefonico</span>
+              <input type="onlynumbers" id="Numero-telefono">
+             </label>
+
+             <label for="Hora de contacto">
+                <span> En que horario te gustaria ser contactado</span>
+                <input type="time" id="hora-para-llamar">
+             </label>
+
+             <label for="Cotización"> 
+                <span> ¿Qué servicio te interesa cotizar?</span>
+                <input type="text" placeholder="¿Qué quieres cotizar?" required id="cotizacion"></textarea>
+             </label>
+              
+             <label for="botón enviar"> 
+                <button type="submit">Enviar</button id="boton-formulario">
+             </label>
             </form>
         </section>
         
